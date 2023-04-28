@@ -3,14 +3,16 @@ import { Footer } from 'flowbite-react'
 
 export default function FooterComp() {
   return (
-    <div className='px-9'>
-      <Footer container={true}>
+    <div className='px-3 md:px-9 py-5'>
+      <Footer 
+        container={true} 
+      >
         <Footer.Copyright
           href="#"
           by="Sirmalafo™"
           year={2022}
         />
-        <Footer.LinkGroup>
+        <Footer.LinkGroup className='flex gap-3'>
           <Footer.Link href="#">
             About
           </Footer.Link>
@@ -28,3 +30,6 @@ export default function FooterComp() {
     </div>
   )
 }
+
+
+// className='grid md:flex gap-3 bg-transparent bg-opacity-20 backdrop-blur-lg rounded drop-shadow-md w-full'
